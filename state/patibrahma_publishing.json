@@ -68,5 +68,19 @@
     },
     "source_episode": "455",
     "updated_at": "2026-10-30T19:42:51+00:00"
+  },
+  "ud2GvJUjBYs": {
+    "source_video_id": "ud2GvJUjBYs",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-10-31T19:26:43+00:00",
+        "media_id": "sWfhJcK7CWc",
+        "error": ""
+      }
+    },
+    "source_episode": "456",
+    "updated_at": "2026-10-31T19:26:43+00:00"
   }
 }
