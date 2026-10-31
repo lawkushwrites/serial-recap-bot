@@ -68,5 +68,19 @@
     },
     "source_episode": "53",
     "updated_at": "2026-10-30T18:59:24+00:00"
+  },
+  "MugIFSQgh08": {
+    "source_video_id": "MugIFSQgh08",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-10-31T19:06:32+00:00",
+        "media_id": "ivuiQM9_2B4",
+        "error": ""
+      }
+    },
+    "source_episode": "54",
+    "updated_at": "2026-10-31T19:06:32+00:00"
   }
 }
