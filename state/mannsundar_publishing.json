@@ -68,5 +68,19 @@
     },
     "source_episode": "1773",
     "updated_at": "2026-10-30T19:27:11+00:00"
+  },
+  "RbojqtOo1vo": {
+    "source_video_id": "RbojqtOo1vo",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-10-31T19:11:26+00:00",
+        "media_id": "Y7GNUfsLzq8",
+        "error": ""
+      }
+    },
+    "source_episode": "1774",
+    "updated_at": "2026-10-31T19:11:26+00:00"
   }
 }
