@@ -68,5 +68,19 @@
     },
     "source_episode": "23",
     "updated_at": "2026-10-30T19:49:00+00:00"
+  },
+  "rljoMEVw7MU": {
+    "source_video_id": "rljoMEVw7MU",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-10-31T18:57:54+00:00",
+        "media_id": "m8gHAIYo7h0",
+        "error": ""
+      }
+    },
+    "source_episode": "24",
+    "updated_at": "2026-10-31T18:57:54+00:00"
   }
 }
