@@ -54,5 +54,19 @@
     },
     "source_episode": "380",
     "updated_at": "2026-10-30T19:14:48+00:00"
+  },
+  "jIllFABvvNk": {
+    "source_video_id": "jIllFABvvNk",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-10-31T19:25:55+00:00",
+        "media_id": "UjQlZTstPMQ",
+        "error": ""
+      }
+    },
+    "source_episode": "381",
+    "updated_at": "2026-10-31T19:25:55+00:00"
   }
 }
