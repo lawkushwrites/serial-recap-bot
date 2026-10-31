@@ -68,5 +68,19 @@
     },
     "source_episode": "1194",
     "updated_at": "2026-10-30T19:28:25+00:00"
+  },
+  "j7WmloVujPk": {
+    "source_video_id": "j7WmloVujPk",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-10-31T19:21:27+00:00",
+        "media_id": "bUoEs0u3LWQ",
+        "error": ""
+      }
+    },
+    "source_episode": "1195",
+    "updated_at": "2026-10-31T19:21:27+00:00"
   }
 }
