@@ -82,5 +82,19 @@
     },
     "source_episode": "1774",
     "updated_at": "2026-10-31T19:11:26+00:00"
+  },
+  "lXR3Af6a04k": {
+    "source_video_id": "lXR3Af6a04k",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-01T18:49:10+00:00",
+        "media_id": "Q3MhTOpn24Y",
+        "error": ""
+      }
+    },
+    "source_episode": "1775",
+    "updated_at": "2026-11-01T18:49:10+00:00"
   }
 }
