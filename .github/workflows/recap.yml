@@ -104,8 +104,8 @@ jobs:
           RENDER_VERTICAL: ${{ vars.RENDER_VERTICAL || 'false' }}
           FACEBOOK_DESCRIPTION: ${{ vars.FACEBOOK_DESCRIPTION }}
           INSTAGRAM_CAPTION: ${{ vars.INSTAGRAM_CAPTION }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || secrets.CF_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
           POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
           UPLOAD_PRIVACY: ${{ vars.UPLOAD_PRIVACY }}
           SERIAL_CHANNEL_NAME: ${{ vars.SERIAL_CHANNEL_NAME }}

@@ -124,11 +124,27 @@ try:
     comps = {i: [] for i in range(n + 1)}; raws = {}
     for k, (i, label, p) in enumerate(jobs):
         raw, comp = f"{tmp}/img{i}_{label}.jpg", f"{tmp}/comp{i}_{label}.jpg"
-        if images.generate(p, seed + (7 if label == "close" else 0), raw): render.cover(raw, comp); raws[(i, label)] = raw
-        elif comps[i]: print(f"    image {i} {label}: failed, reusing the scene's other image"); continue
+        if images.generate(p, seed + (7 if label == "close" else 0), raw):
+            render.cover(raw, comp)
+            raws[(i, label)] = raw
         else:
-            print(f"    image {i} {label}: using title card"); render.card(scenes[min(i, n - 1)].get("title", ""), scenes[min(i, n - 1)].get("emotion", ""), comp)
+            print(f"    image {i} {label}: generation failed; deferring fallback")
+            continue
         comps[i].append(comp)
+
+    generated_indices = {i for i, _ in raws}
+    for i, source in images.reuse_nearest_generated_images(comps, generated_indices):
+        print(f"    image {i}: reusing generated artwork from scene {source}")
+    if not generated_indices:
+        print("    no generated episode art available; using title cards")
+        for i in range(n + 1):
+            comp = f"{tmp}/comp{i}_fallback.jpg"
+            render.card(
+                scenes[min(i, n - 1)].get("title", ""),
+                scenes[min(i, n - 1)].get("emotion", ""),
+                comp,
+            )
+            comps[i].append(comp)
 
     pv = f"{out_dir}/{KEY}_{ep['id']}_preview"; os.makedirs(pv, exist_ok=True)
     for (i, label), raw in raws.items(): shutil.copy(raw, f"{pv}/image_{i + 1:02d}_{label}.jpg")

@@ -115,8 +115,8 @@ class ThumbnailGenerationTests(unittest.TestCase):
     def test_thumbnail_generation_falls_back_when_flux_fails(self):
         with tempfile.TemporaryDirectory() as folder:
             output = Path(folder) / "thumbnail.jpg"
-            with mock.patch.object(images, "_flux", side_effect=RuntimeError("space unavailable")), \
-                    mock.patch.object(images, "_cloudflare", return_value=Image.new("RGB", (1280, 720))), \
+            with mock.patch.object(images, "_cloudflare", side_effect=RuntimeError("Cloudflare unavailable")), \
+                    mock.patch.object(images, "_flux", return_value=Image.new("RGB", (1280, 720))), \
                     mock.patch.object(images.time, "sleep"):
                 succeeded = images.generate_thumbnail("cover prompt", 42, str(output))
 
@@ -124,36 +124,71 @@ class ThumbnailGenerationTests(unittest.TestCase):
             with Image.open(output) as image:
                 self.assertEqual(image.size, (1280, 720))
 
-    def test_scene_image_generation_uses_flux_before_fallbacks(self):
+    def test_cloudflare_uses_configured_secret_names_and_decodes_image(self):
+        import base64
+
+        response = mock.Mock()
+        response.headers = {"content-type": "application/json"}
+        response.json.return_value = {"success": True, "result": {
+            "image": base64.b64encode(jpeg_bytes((1280, 720))).decode("ascii"),
+        }}
+        with mock.patch.dict(os.environ, {
+            "CLOUDFLARE_ACCOUNT_ID": "account",
+            "CLOUDFLARE_API_TOKEN": "test-token",
+        }), mock.patch.object(images.requests, "post", return_value=response) as post:
+            image = images._cloudflare("cover prompt", 42)
+
+        self.assertEqual(image.size, (1280, 720))
+        self.assertEqual(post.call_args.kwargs["headers"]["Authorization"], "Bearer test-token")
+        self.assertEqual(post.call_args.kwargs["json"]["steps"], 4)
+
+    def test_scene_image_generation_uses_cloudflare_before_fallbacks(self):
         with tempfile.TemporaryDirectory() as folder:
             output = Path(folder) / "scene.jpg"
-            with mock.patch.object(images, "_flux", return_value=Image.new("RGB", (1280, 720))) as flux, \
-                    mock.patch.object(images, "_cloudflare") as cloudflare, \
+            with mock.patch.object(images, "_cloudflare", return_value=Image.new("RGB", (1280, 720))) as cloudflare, \
+                    mock.patch.object(images, "_flux") as flux, \
                     mock.patch.object(images, "_pollinations") as pollinations:
                 succeeded = images.generate("scene prompt", 42, str(output))
 
         self.assertTrue(succeeded)
-        flux.assert_called_once()
-        cloudflare.assert_not_called()
+        cloudflare.assert_called_once()
+        flux.assert_not_called()
         pollinations.assert_not_called()
 
-    def test_zero_gpu_quota_skips_flux_retries_and_uses_next_provider(self):
+    def test_cloudflare_quota_failure_falls_back_to_flux(self):
         with tempfile.TemporaryDirectory() as folder:
             output = Path(folder) / "scene.jpg"
             with mock.patch.object(
-                images, "_flux",
-                side_effect=RuntimeError("You have exceeded your ZeroGPU quota"),
-            ) as flux, \
-                    mock.patch.object(images, "_cloudflare", return_value=Image.new("RGB", (1280, 720))) as cloudflare, \
+                images, "_cloudflare",
+                side_effect=RuntimeError("Cloudflare daily quota exhausted"),
+            ) as cloudflare, \
+                    mock.patch.object(images, "_flux", return_value=Image.new("RGB", (1280, 720))) as flux, \
                     mock.patch.object(images, "_pollinations") as pollinations, \
                     mock.patch.object(images.time, "sleep") as sleep:
                 succeeded = images.generate("scene prompt", 42, str(output))
 
         self.assertTrue(succeeded)
-        flux.assert_called_once()
         cloudflare.assert_called_once()
+        flux.assert_called_once()
         pollinations.assert_not_called()
         sleep.assert_not_called()
+
+    def test_missing_scenes_reuse_nearest_generated_art(self):
+        comps = {0: ["scene-0"], 1: [], 2: ["scene-2"], 3: []}
+
+        reused = images.reuse_nearest_generated_images(comps, {0, 2})
+
+        self.assertEqual(reused, [(1, 0), (3, 2)])
+        self.assertEqual(comps[1], ["scene-0"])
+        self.assertEqual(comps[3], ["scene-2"])
+
+    def test_missing_scenes_remain_unfilled_when_no_art_was_generated(self):
+        comps = {0: [], 1: []}
+
+        reused = images.reuse_nearest_generated_images(comps, set())
+
+        self.assertEqual(reused, [])
+        self.assertEqual(comps, {0: [], 1: []})
 
     def test_payment_required_stops_retries_for_that_provider(self):
         response = images.requests.Response()
