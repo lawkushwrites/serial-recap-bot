@@ -37,7 +37,7 @@ def mark_done(key, vid, episode_no=None, target_ep=None, yt_id=None):
     record_status(key, "success", vid=vid, episode=episode_no, target_ep=target_ep, yt_id=yt_id)
 
 def record_status(key, status, vid="", episode="", target_ep="", yt_id="", error="", log_tail=""):
-    """Write structured execution status & log summary for watchdog inspection and auto-rerun decisions."""
+    """Write structured execution status and log summary for scheduler diagnostics."""
     os.makedirs(os.path.join(S.BASE, "state"), exist_ok=True)
     now_ist = dt.datetime.now(IST)
     payload = {

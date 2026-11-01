@@ -14,7 +14,7 @@
  *    - It will automatically create:
  *      a) A 12:00 AM IST midnight trigger (`triggerNightly12AM`) to start all 8 shows.
  *      b) A 2-hour watchdog trigger (`watchdogCheckAndRerun`) that reads back GitHub workflow run status & job logs
- *         and automatically re-runs any failed or missed show job!
+ *         and automatically re-runs any failed show job.
  */
 
 const GITHUB_OWNER = "YOUR_GITHUB_USERNAME";
@@ -26,7 +26,7 @@ const SHOW_KEYS     = ["kaisi", "bhabhi", "sohni", "rimjhim", "mannsundar", "ati
 
 /**
  * Run this function ONCE in Google Apps Script editor to install the exact 12:00 AM IST trigger
- * plus the automatic log-checking watchdog triggers.
+ * plus the automatic log-checking watchdog trigger.
  */
 function setupTriggers() {
   // Remove any old duplicate triggers first
@@ -61,7 +61,6 @@ function triggerNightly12AM() {
  * Inspects recent GitHub Actions runs & job logs:
  * - If no run started today after 12:00 AM IST, triggers the full nightly run.
  * - If any individual show job failed, timed out, or was cancelled, reads its log and re-triggers ONLY that show.
- * - Also triggers the repo's built-in `watchdog` mode to verify Dangal TV's feed against `state/<show>.json`.
  */
 function watchdogCheckAndRerun() {
   const nowIst = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
@@ -122,10 +121,6 @@ function watchdogCheckAndRerun() {
     }
   }
 
-  // Also run the repo's internal feed/state watchdog check once around 4-5 AM IST
-  if (hourIst === 4 || hourIst === 5) {
-    dispatchWorkflow("watchdog");
-  }
 }
 
 function dispatchWorkflow(onlyShow) {
