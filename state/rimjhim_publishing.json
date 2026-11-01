@@ -68,5 +68,19 @@
     },
     "source_episode": "381",
     "updated_at": "2026-10-31T19:25:55+00:00"
+  },
+  "qFkwaTonTyI": {
+    "source_video_id": "qFkwaTonTyI",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-01T18:51:07+00:00",
+        "media_id": "uqy1J5TTsHg",
+        "error": ""
+      }
+    },
+    "source_episode": "382",
+    "updated_at": "2026-11-01T18:51:07+00:00"
   }
 }
