@@ -5,14 +5,14 @@ The bot runs at **12:00 AM IST (Midnight)** via an external cron trigger and sch
 
 | Show Key | Serial Name | Scheduled YouTube Publish Time (IST) |
 | :--- | :--- | :--- |
-| `kaisi` | Kaisi Teri Dillagi (कैसी तेरी दिल्लगी) | **09:00 AM IST** |
-| `bhabhi` | Hamari Bhabhi Number 1 (हमारी भाभी नंबर 1) | **10:00 AM IST** |
-| `sohni` | Sohni Aur Nahi Koi Honi (सोहनी और नहीं कोई होनी) | **11:00 AM IST** |
-| `rimjhim` | Rimjhim Choti Umar Bada Safar (रिमझिम छोटी उम्र बड़ा सफर) | **12:00 PM IST** |
-| `mannsundar` | Mann Sundar (मन सुंदर) | **01:00 PM IST** |
-| `atisundar` | Mann Atisundar (मन अतिसुंदर) | **02:00 PM IST** |
-| `patibrahma` | Pati Brahmachari (पति ब्रह्मचारी) | **03:00 PM IST** |
-| `ishq` | Ishq Junooni (इश्क़ जुनूनी) | **04:00 PM IST** |
+| `kaisi` | Kaisi Teri Dillagi (कैसी तेरी दिल्लगी) | **04:00 PM IST** |
+| `bhabhi` | Hamari Bhabhi Number 1 (हमारी भाभी नंबर 1) | **03:00 PM IST** |
+| `sohni` | Sohni Aur Nahi Koi Honi (सोहनी और नहीं कोई होनी) | **02:00 PM IST** |
+| `rimjhim` | Rimjhim Choti Umar Bada Safar (रिमझिम छोटी उम्र बड़ा सफर) | **01:00 PM IST** |
+| `mannsundar` | Mann Sundar (मन सुंदर) | **12:00 PM IST** |
+| `atisundar` | Mann Atisundar (मन अतिसुंदर) | **11:00 AM IST** |
+| `patibrahma` | Pati Brahmachari (पति ब्रह्मचारी) | **10:00 AM IST** |
+| `ishq` | Ishq Junooni (इश्क़ जुनूनी) | **09:00 AM IST** |
 
 Each uploaded video gets a generated description with the show name, source and target episode/date, show-specific Hindi/English search phrases and hashtags, the recap/prediction, and the official source episode link. Search terms are generated for the next-day (+1) and two-day-ahead (+2) episode/date only, not for the source day. The description identifies the upload as a recap, not as the full episode.
 
@@ -23,20 +23,18 @@ GitHub's internal `schedule:` cron frequently delays runs by 30–90 minutes or 
 
 1. **Option A — Google Apps Script (`scheduler/google_apps_script.gs`, Recommended & 100% Free)**:
    - Open [script.google.com](https://script.google.com), create a project, and paste `scheduler/google_apps_script.gs`.
-   - Set `GITHUB_OWNER`, `GITHUB_REPO`, and `GITHUB_PAT` (a GitHub Personal Access Token with `repo` and `workflow` permissions).
-   - Run `setupTriggers()` once. It installs an exact **12:00 AM IST (`Asia/Kolkata`)** daily trigger plus a **2-hour Watchdog Log-Inspector** that checks GitHub run logs and automatically re-triggers any failed show.
+   - Set `GITHUB_PAT` to a GitHub Personal Access Token with `repo` and `workflow` permissions.
+   - Run `setupTriggers()` once. It installs a daily **12:00 AM IST (`Asia/Kolkata`)** trigger. Failed show jobs are retried once automatically inside the GitHub Actions run.
 2. **Option B — cron-job.org (100% Free Web Cron)**:
    - Create a free job at [cron-job.org](https://cron-job.org) set to **00:00 Asia/Kolkata (12:00 AM IST)**.
    - Method: `POST` to `https://api.github.com/repos/<OWNER>/<REPO>/actions/workflows/recap.yml/dispatches`
    - Headers: `Authorization: Bearer <YOUR_GITHUB_PAT>`, `Accept: application/vnd.github+json`
    - Body: `{"ref":"main","inputs":{"only_show":"all","test_mode":"false","upload":"true","publish_now":"false"}}`
 
-## Retry, Watchdog & Zero-Duplicate Protection
+## Retry & Zero-Duplicate Protection
 1. **In-Job Log Capture & Auto-Retry (`recap.yml` & `main.py`)**:
    - Every show job streams its logs into `state/<show>_status.json`. If Attempt 1 fails, it cleans up temp files, waits 45 seconds, and retries once automatically inside the same run.
-2. **Google Apps Script Watchdog (`scheduler/google_apps_script.gs`)**:
-   - The only scheduled watchdog checks workflow results every two hours and dispatches a targeted rerun for a failed show.
-3. **Triple Anti-Duplicate Lock (Never Uploads an Episode Twice)**:
+2. **Triple Anti-Duplicate Lock (Never Uploads an Episode Twice)**:
    - **Video ID + Episode Number State (`state/<show>.json`)**: Stores both the source YouTube video ID (`JNdlYnNneKE`) and the episode number (`ep:452`, `target_ep:453`). Even if Dangal TV re-uploads the same episode with a new video ID, it is never processed twice.
    - **Live YouTube Channel Pre-Check (`youtube.already_uploaded()`)**: Before generating a video AND again right before uploading, the bot queries your YouTube channel's uploads list (including private/scheduled videos). If an episode is already uploaded or scheduled on your channel, it syncs `state/<show>.json` and skips immediately.
 
