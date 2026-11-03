@@ -12,5 +12,19 @@
     },
     "source_episode": "103",
     "updated_at": "2026-11-02T18:42:30+00:00"
+  },
+  "_cxSxtVPgHg": {
+    "source_video_id": "_cxSxtVPgHg",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-03T19:01:15+00:00",
+        "media_id": "Yzci01J-Grk",
+        "error": ""
+      }
+    },
+    "source_episode": "104",
+    "updated_at": "2026-11-03T19:01:15+00:00"
   }
 }
