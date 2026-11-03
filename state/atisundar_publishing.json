@@ -12,5 +12,19 @@
     },
     "source_episode": "1197",
     "updated_at": "2026-11-02T19:08:20+00:00"
+  },
+  "_Q__3Ud-Mqg": {
+    "source_video_id": "_Q__3Ud-Mqg",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-03T19:20:56+00:00",
+        "media_id": "LNcw-EPI7OA",
+        "error": ""
+      }
+    },
+    "source_episode": "1198",
+    "updated_at": "2026-11-03T19:20:56+00:00"
   }
 }
