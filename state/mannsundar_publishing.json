@@ -12,5 +12,19 @@
     },
     "source_episode": "1776",
     "updated_at": "2026-11-02T19:04:30+00:00"
+  },
+  "Pn45ghSvpo0": {
+    "source_video_id": "Pn45ghSvpo0",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-03T19:14:04+00:00",
+        "media_id": "zX6KaHPFD0M",
+        "error": ""
+      }
+    },
+    "source_episode": "1777",
+    "updated_at": "2026-11-03T19:14:04+00:00"
   }
 }
