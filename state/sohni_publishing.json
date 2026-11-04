@@ -26,5 +26,19 @@
     },
     "source_episode": "26",
     "updated_at": "2026-11-03T19:11:21+00:00"
+  },
+  "ZajsmYDYU-o": {
+    "source_video_id": "ZajsmYDYU-o",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-04T18:53:13+00:00",
+        "media_id": "T_PKNymc60M",
+        "error": ""
+      }
+    },
+    "source_episode": "27",
+    "updated_at": "2026-11-04T18:53:13+00:00"
   }
 }
