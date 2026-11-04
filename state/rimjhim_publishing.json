@@ -26,5 +26,19 @@
     },
     "source_episode": "384",
     "updated_at": "2026-11-03T19:17:14+00:00"
+  },
+  "nucCG0WMr3I": {
+    "source_video_id": "nucCG0WMr3I",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-04T19:16:13+00:00",
+        "media_id": "MWuM7RQo3DY",
+        "error": ""
+      }
+    },
+    "source_episode": "385",
+    "updated_at": "2026-11-04T19:16:13+00:00"
   }
 }
