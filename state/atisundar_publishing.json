@@ -26,5 +26,19 @@
     },
     "source_episode": "1198",
     "updated_at": "2026-11-03T19:20:56+00:00"
+  },
+  "mnT_5OOIsuU": {
+    "source_video_id": "mnT_5OOIsuU",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-04T19:11:53+00:00",
+        "media_id": "5bVR2kZ9LRw",
+        "error": ""
+      }
+    },
+    "source_episode": "1199",
+    "updated_at": "2026-11-04T19:11:53+00:00"
   }
 }
