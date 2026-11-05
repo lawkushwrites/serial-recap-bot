@@ -40,5 +40,19 @@
     },
     "source_episode": "105",
     "updated_at": "2026-11-04T18:55:48+00:00"
+  },
+  "2KClOx7_TPM": {
+    "source_video_id": "2KClOx7_TPM",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-05T18:45:51+00:00",
+        "media_id": "MMFLcIAtcQg",
+        "error": ""
+      }
+    },
+    "source_episode": "106",
+    "updated_at": "2026-11-05T18:45:51+00:00"
   }
 }
