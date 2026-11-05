@@ -40,5 +40,19 @@
     },
     "source_episode": "27",
     "updated_at": "2026-11-04T18:53:13+00:00"
+  },
+  "RDd9VqqZdR0": {
+    "source_video_id": "RDd9VqqZdR0",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-05T18:43:02+00:00",
+        "media_id": "OlGloqn_Q-4",
+        "error": ""
+      }
+    },
+    "source_episode": "28",
+    "updated_at": "2026-11-05T18:43:02+00:00"
   }
 }
