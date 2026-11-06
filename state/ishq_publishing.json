@@ -54,5 +54,19 @@
     },
     "source_episode": "244",
     "updated_at": "2026-11-05T19:18:42+00:00"
+  },
+  "135AarVYsik": {
+    "source_video_id": "135AarVYsik",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-06T19:27:15+00:00",
+        "media_id": "o1S3miADH5Y",
+        "error": ""
+      }
+    },
+    "source_episode": "245",
+    "updated_at": "2026-11-06T19:27:15+00:00"
   }
 }
