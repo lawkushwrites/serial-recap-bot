@@ -68,5 +68,19 @@
     },
     "source_episode": "59",
     "updated_at": "2026-11-06T19:43:22+00:00"
+  },
+  "Os53scwTltA": {
+    "source_video_id": "Os53scwTltA",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-07T18:56:42+00:00",
+        "media_id": "xwtaGd-ubD8",
+        "error": ""
+      }
+    },
+    "source_episode": "60",
+    "updated_at": "2026-11-07T18:56:42+00:00"
   }
 }
