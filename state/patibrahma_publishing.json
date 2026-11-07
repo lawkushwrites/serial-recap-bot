@@ -68,5 +68,19 @@
     },
     "source_episode": "461",
     "updated_at": "2026-11-06T19:23:04+00:00"
+  },
+  "hHTZDY3pBm0": {
+    "source_video_id": "hHTZDY3pBm0",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-07T19:34:01+00:00",
+        "media_id": "Dtl5PG0jbPE",
+        "error": ""
+      }
+    },
+    "source_episode": "462",
+    "updated_at": "2026-11-07T19:34:01+00:00"
   }
 }
