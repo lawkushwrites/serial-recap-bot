@@ -68,5 +68,19 @@
     },
     "source_episode": "1780",
     "updated_at": "2026-11-06T19:10:53+00:00"
+  },
+  "gQ6MvZlK9Yk": {
+    "source_video_id": "gQ6MvZlK9Yk",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-07T19:16:32+00:00",
+        "media_id": "sbbUO8ulUvg",
+        "error": ""
+      }
+    },
+    "source_episode": "1781",
+    "updated_at": "2026-11-07T19:16:32+00:00"
   }
 }
