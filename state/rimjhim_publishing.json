@@ -82,5 +82,19 @@
     },
     "source_episode": "388",
     "updated_at": "2026-11-07T19:23:24+00:00"
+  },
+  "HCzbjfNnFBI": {
+    "source_video_id": "HCzbjfNnFBI",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-08T18:49:20+00:00",
+        "media_id": "A-YCcl_Ei34",
+        "error": ""
+      }
+    },
+    "source_episode": "389",
+    "updated_at": "2026-11-08T18:49:20+00:00"
   }
 }
