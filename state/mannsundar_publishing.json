@@ -82,5 +82,19 @@
     },
     "source_episode": "1781",
     "updated_at": "2026-11-07T19:16:32+00:00"
+  },
+  "fdGoRKC87pA": {
+    "source_video_id": "fdGoRKC87pA",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-08T18:56:44+00:00",
+        "media_id": "cWuXVHjTR-M",
+        "error": ""
+      }
+    },
+    "source_episode": "1782",
+    "updated_at": "2026-11-08T18:56:44+00:00"
   }
 }
