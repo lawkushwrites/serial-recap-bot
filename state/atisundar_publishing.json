@@ -82,5 +82,19 @@
     },
     "source_episode": "1203",
     "updated_at": "2026-11-08T19:18:41+00:00"
+  },
+  "QpAoDv_YN1k": {
+    "source_video_id": "QpAoDv_YN1k",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-09T19:02:18+00:00",
+        "media_id": "aFSwNxISyQM",
+        "error": ""
+      }
+    },
+    "source_episode": "1204",
+    "updated_at": "2026-11-09T19:02:18+00:00"
   }
 }
