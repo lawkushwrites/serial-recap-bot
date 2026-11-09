@@ -96,5 +96,19 @@
     },
     "source_episode": "1782",
     "updated_at": "2026-11-08T18:56:44+00:00"
+  },
+  "meCmFt4UlRQ": {
+    "source_video_id": "meCmFt4UlRQ",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-09T18:58:10+00:00",
+        "media_id": "PZ-K5wqn8Go",
+        "error": ""
+      }
+    },
+    "source_episode": "1783",
+    "updated_at": "2026-11-09T18:58:10+00:00"
   }
 }
