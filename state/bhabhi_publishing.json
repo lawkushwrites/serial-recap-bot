@@ -96,5 +96,19 @@
     },
     "source_episode": "61",
     "updated_at": "2026-11-09T18:40:27+00:00"
+  },
+  "T9apOsBsmAs": {
+    "source_video_id": "T9apOsBsmAs",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-10T18:57:41+00:00",
+        "media_id": "VJhF0BLEQ5Y",
+        "error": ""
+      }
+    },
+    "source_episode": "62",
+    "updated_at": "2026-11-10T18:57:41+00:00"
   }
 }
