@@ -96,5 +96,19 @@
     },
     "source_episode": "1204",
     "updated_at": "2026-11-09T19:02:18+00:00"
+  },
+  "amZXbuydSkQ": {
+    "source_video_id": "amZXbuydSkQ",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-10T19:08:02+00:00",
+        "media_id": "KuQk2px2GCI",
+        "error": ""
+      }
+    },
+    "source_episode": "1205",
+    "updated_at": "2026-11-10T19:08:02+00:00"
   }
 }
