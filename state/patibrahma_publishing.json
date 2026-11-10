@@ -96,5 +96,19 @@
     },
     "source_episode": "463",
     "updated_at": "2026-11-09T19:08:43+00:00"
+  },
+  "SIdf3I07NRE": {
+    "source_video_id": "SIdf3I07NRE",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-10T19:23:23+00:00",
+        "media_id": "PBjGQQEDlKs",
+        "error": ""
+      }
+    },
+    "source_episode": "464",
+    "updated_at": "2026-11-10T19:23:23+00:00"
   }
 }
