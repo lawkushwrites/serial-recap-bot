@@ -96,5 +96,19 @@
     },
     "source_episode": "247",
     "updated_at": "2026-11-09T19:12:39+00:00"
+  },
+  "CQCPFd4G8v8": {
+    "source_video_id": "CQCPFd4G8v8",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-10T19:25:38+00:00",
+        "media_id": "NmczI6kJyN4",
+        "error": ""
+      }
+    },
+    "source_episode": "248",
+    "updated_at": "2026-11-10T19:25:38+00:00"
   }
 }
