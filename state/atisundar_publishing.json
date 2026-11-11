@@ -110,5 +110,19 @@
     },
     "source_episode": "1205",
     "updated_at": "2026-11-10T19:08:02+00:00"
+  },
+  "AgP9Yd6SXdA": {
+    "source_video_id": "AgP9Yd6SXdA",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-11T19:27:07+00:00",
+        "media_id": "6Ds73IgcaN8",
+        "error": ""
+      }
+    },
+    "source_episode": "1206",
+    "updated_at": "2026-11-11T19:27:07+00:00"
   }
 }
