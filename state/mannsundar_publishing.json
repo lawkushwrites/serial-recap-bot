@@ -124,5 +124,19 @@
     },
     "source_episode": "1784",
     "updated_at": "2026-11-10T19:28:01+00:00"
+  },
+  "mYWUlfvV6WA": {
+    "source_video_id": "mYWUlfvV6WA",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-11T20:03:23+00:00",
+        "media_id": "eTngZy5wlfg",
+        "error": ""
+      }
+    },
+    "source_episode": "1785",
+    "updated_at": "2026-11-11T20:03:23+00:00"
   }
 }
