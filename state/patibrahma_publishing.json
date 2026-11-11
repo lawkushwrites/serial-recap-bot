@@ -110,5 +110,19 @@
     },
     "source_episode": "464",
     "updated_at": "2026-11-10T19:23:23+00:00"
+  },
+  "GYFZSz0KFqg": {
+    "source_video_id": "GYFZSz0KFqg",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-11T19:31:53+00:00",
+        "media_id": "kTRUeGG3UHI",
+        "error": ""
+      }
+    },
+    "source_episode": "465",
+    "updated_at": "2026-11-11T19:31:53+00:00"
   }
 }
