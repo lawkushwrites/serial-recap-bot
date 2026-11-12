@@ -17,6 +17,8 @@
   "ep:31",
   "ep:32",
   "ep:33",
+  "ep:34",
+  "mASMAvzcASI",
   "target_ep:27",
   "target_ep:28",
   "target_ep:29",
@@ -25,5 +27,6 @@
   "target_ep:32",
   "target_ep:33",
   "target_ep:34",
-  "target_ep:35"
+  "target_ep:35",
+  "target_ep:36"
 ]
