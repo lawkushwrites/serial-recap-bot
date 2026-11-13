@@ -124,5 +124,19 @@
     },
     "source_episode": "63",
     "updated_at": "2026-11-11T19:21:24+00:00"
+  },
+  "K_OV86uLxtw": {
+    "source_video_id": "K_OV86uLxtw",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-13T18:45:16+00:00",
+        "media_id": "p_mC09NpHLI",
+        "error": ""
+      }
+    },
+    "source_episode": "65",
+    "updated_at": "2026-11-13T18:45:16+00:00"
   }
 }
