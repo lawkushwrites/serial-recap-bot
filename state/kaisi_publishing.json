@@ -138,5 +138,19 @@
     },
     "source_episode": "112",
     "updated_at": "2026-11-12T19:19:58+00:00"
+  },
+  "fB49OjHUSKA": {
+    "source_video_id": "fB49OjHUSKA",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-13T18:50:18+00:00",
+        "media_id": "PYt0KRgQd6Y",
+        "error": ""
+      }
+    },
+    "source_episode": "113",
+    "updated_at": "2026-11-13T18:50:18+00:00"
   }
 }
