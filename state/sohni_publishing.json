@@ -152,5 +152,19 @@
     },
     "source_episode": "35",
     "updated_at": "2026-11-13T18:50:04+00:00"
+  },
+  "XU6baH0jFCE": {
+    "source_video_id": "XU6baH0jFCE",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-14T19:05:02+00:00",
+        "media_id": "uBJi1nlYFAg",
+        "error": ""
+      }
+    },
+    "source_episode": "36",
+    "updated_at": "2026-11-14T19:05:02+00:00"
   }
 }
