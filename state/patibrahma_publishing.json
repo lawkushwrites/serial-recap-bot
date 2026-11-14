@@ -124,5 +124,19 @@
     },
     "source_episode": "465",
     "updated_at": "2026-11-11T19:31:53+00:00"
+  },
+  "senYsBaThfE": {
+    "source_video_id": "senYsBaThfE",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-14T02:22:16+00:00",
+        "media_id": "24lRjyJEF_0",
+        "error": ""
+      }
+    },
+    "source_episode": "467",
+    "updated_at": "2026-11-14T02:22:16+00:00"
   }
 }
