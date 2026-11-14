@@ -12,7 +12,7 @@
  * 3. Fill in `GITHUB_PAT` (a GitHub Personal Access Token with `repo` and `workflow` scope).
  * 4. In the top toolbar, select `setupTriggers` from the function dropdown and click "Run" once.
  *    - It will automatically create:
- *      a) A 12:00 AM IST midnight trigger (`triggerNightly12AM`) to start all 8 shows.
+ *      a) A 12:00 AM IST midnight trigger (`triggerNightly12AM`) to start all 9 shows.
  */
 
 const GITHUB_OWNER = "lawkushwrites";
@@ -41,7 +41,7 @@ function setupTriggers() {
 }
 
 /**
- * Fires at 12:00 AM IST every night to generate all 8 videos for their 4:00 PM through 9:00 AM IST slots.
+ * Fires at 12:00 AM IST every night to generate all 9 videos, including Saanche at 12:30 PM IST.
  */
 function triggerNightly12AM() {
   dispatchWorkflow("all");
