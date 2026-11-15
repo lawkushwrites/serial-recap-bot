@@ -180,5 +180,19 @@
     },
     "source_episode": "395",
     "updated_at": "2026-11-14T19:11:53+00:00"
+  },
+  "DvlmH7TSIaM": {
+    "source_video_id": "DvlmH7TSIaM",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-15T18:54:13+00:00",
+        "media_id": "hNOV0RReeTo",
+        "error": ""
+      }
+    },
+    "source_episode": "396",
+    "updated_at": "2026-11-15T18:54:13+00:00"
   }
 }
