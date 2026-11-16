@@ -194,5 +194,19 @@
     },
     "source_episode": "396",
     "updated_at": "2026-11-15T18:54:13+00:00"
+  },
+  "kDcmhilRHrw": {
+    "source_video_id": "kDcmhilRHrw",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-16T18:59:17+00:00",
+        "media_id": "-14rYB8OR2M",
+        "error": ""
+      }
+    },
+    "source_episode": "397",
+    "updated_at": "2026-11-16T18:59:17+00:00"
   }
 }
