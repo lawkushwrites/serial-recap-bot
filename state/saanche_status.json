@@ -1,12 +1,12 @@
 {
   "show": "saanche",
-  "status": "no_new_episode",
-  "date_ist": "2026-11-16",
-  "timestamp_ist": "2026-11-16 00:26:28 IST",
-  "source_video_id": "",
-  "source_episode": "",
-  "target_episode": "",
-  "youtube_video_id": "",
+  "status": "success",
+  "date_ist": "2026-11-17",
+  "timestamp_ist": "2026-11-17 01:20:24 IST",
+  "source_video_id": "1G3bVazk2uM",
+  "source_episode": "13",
+  "target_episode": "15",
+  "youtube_video_id": "yLXxcDJgCQI",
   "error": "",
-  "log_tail": "== Saanche Darbar Ki Jai Dhyanu Bhagat Ki Amar Kahani | slot=12:30 IST | test=False | upload=True | publish_now=False\n1/7 find episode\n   uploads via RSS: 15\n   total uploads scanned (RSS + OAuth/API): 15\n   no new unseen full episode for this show right now\n"
+  "log_tail": ""
 }
