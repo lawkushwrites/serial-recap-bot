@@ -180,5 +180,19 @@
     },
     "source_episode": "37",
     "updated_at": "2026-11-16T18:50:17+00:00"
+  },
+  "IpFERAwevR4": {
+    "source_video_id": "IpFERAwevR4",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-17T19:06:12+00:00",
+        "media_id": "sAofjIBt6ww",
+        "error": ""
+      }
+    },
+    "source_episode": "38",
+    "updated_at": "2026-11-17T19:06:12+00:00"
   }
 }
