@@ -180,5 +180,19 @@
     },
     "source_episode": "115",
     "updated_at": "2026-11-16T18:51:56+00:00"
+  },
+  "f70349urnHw": {
+    "source_video_id": "f70349urnHw",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-17T18:57:50+00:00",
+        "media_id": "InKk1yl30Qs",
+        "error": ""
+      }
+    },
+    "source_episode": "116",
+    "updated_at": "2026-11-17T18:57:50+00:00"
   }
 }
