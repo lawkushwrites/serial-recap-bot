@@ -194,5 +194,19 @@
     },
     "source_episode": "1791",
     "updated_at": "2026-11-18T04:18:13+00:00"
+  },
+  "vbp7jGTTY_Y": {
+    "source_video_id": "vbp7jGTTY_Y",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-18T20:05:56+00:00",
+        "media_id": "ajpeL1u7b_k",
+        "error": ""
+      }
+    },
+    "source_episode": "1792",
+    "updated_at": "2026-11-18T20:05:56+00:00"
   }
 }
