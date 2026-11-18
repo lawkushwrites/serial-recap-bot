@@ -180,5 +180,19 @@
     },
     "source_episode": "1789",
     "updated_at": "2026-11-15T18:54:39+00:00"
+  },
+  "g4q26lBdpao": {
+    "source_video_id": "g4q26lBdpao",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-18T04:18:13+00:00",
+        "media_id": "5ipR7F1ZsiA",
+        "error": ""
+      }
+    },
+    "source_episode": "1791",
+    "updated_at": "2026-11-18T04:18:13+00:00"
   }
 }
