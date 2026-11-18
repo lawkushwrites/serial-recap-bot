@@ -166,5 +166,19 @@
     },
     "source_episode": "1210",
     "updated_at": "2026-11-15T18:55:24+00:00"
+  },
+  "VaP3_adtWkg": {
+    "source_video_id": "VaP3_adtWkg",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-18T04:46:32+00:00",
+        "media_id": "qRiRTre2r-Y",
+        "error": ""
+      }
+    },
+    "source_episode": "1212",
+    "updated_at": "2026-11-18T04:46:32+00:00"
   }
 }
