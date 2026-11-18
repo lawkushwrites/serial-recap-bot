@@ -208,5 +208,19 @@
     },
     "source_episode": "397",
     "updated_at": "2026-11-16T18:59:17+00:00"
+  },
+  "hPZf18zRIbA": {
+    "source_video_id": "hPZf18zRIbA",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-18T04:18:50+00:00",
+        "media_id": "ckuqZH5SvX0",
+        "error": ""
+      }
+    },
+    "source_episode": "398",
+    "updated_at": "2026-11-18T04:18:50+00:00"
   }
 }
