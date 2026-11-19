@@ -54,5 +54,19 @@
     },
     "source_episode": "14",
     "updated_at": "2026-11-18T04:58:48+00:00"
+  },
+  "WK44QNHqJOw": {
+    "source_video_id": "WK44QNHqJOw",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-19T19:46:24+00:00",
+        "media_id": "O6f3T4wvUJ8",
+        "error": ""
+      }
+    },
+    "source_episode": "16",
+    "updated_at": "2026-11-19T19:46:24+00:00"
   }
 }
