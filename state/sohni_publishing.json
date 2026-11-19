@@ -194,5 +194,19 @@
     },
     "source_episode": "38",
     "updated_at": "2026-11-17T19:06:12+00:00"
+  },
+  "qnssLb3gV10": {
+    "source_video_id": "qnssLb3gV10",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-19T18:59:29+00:00",
+        "media_id": "PbNFoWmaDDQ",
+        "error": ""
+      }
+    },
+    "source_episode": "40",
+    "updated_at": "2026-11-19T18:59:29+00:00"
   }
 }
