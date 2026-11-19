@@ -208,5 +208,19 @@
     },
     "source_episode": "1792",
     "updated_at": "2026-11-18T20:05:56+00:00"
+  },
+  "inVkUpIT2fs": {
+    "source_video_id": "inVkUpIT2fs",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-19T19:25:10+00:00",
+        "media_id": "Vz-wavVKvvI",
+        "error": ""
+      }
+    },
+    "source_episode": "1793",
+    "updated_at": "2026-11-19T19:25:10+00:00"
   }
 }
