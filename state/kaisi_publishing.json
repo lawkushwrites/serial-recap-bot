@@ -208,5 +208,19 @@
     },
     "source_episode": "118",
     "updated_at": "2026-11-19T18:48:46+00:00"
+  },
+  "z7Bzulfq8pU": {
+    "source_video_id": "z7Bzulfq8pU",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-20T19:06:19+00:00",
+        "media_id": "_peGx-uRMEc",
+        "error": ""
+      }
+    },
+    "source_episode": "119",
+    "updated_at": "2026-11-20T19:06:19+00:00"
   }
 }
