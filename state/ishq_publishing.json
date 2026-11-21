@@ -180,5 +180,19 @@
     },
     "source_episode": "256",
     "updated_at": "2026-11-19T19:30:31+00:00"
+  },
+  "wB-wN1lPhRM": {
+    "source_video_id": "wB-wN1lPhRM",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-21T02:08:43+00:00",
+        "media_id": "kSCkFEQhJbY",
+        "error": ""
+      }
+    },
+    "source_episode": "257",
+    "updated_at": "2026-11-21T02:08:43+00:00"
   }
 }
