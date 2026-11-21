@@ -222,5 +222,19 @@
     },
     "source_episode": "41",
     "updated_at": "2026-11-20T19:02:25+00:00"
+  },
+  "kWtIGCn47N8": {
+    "source_video_id": "kWtIGCn47N8",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-21T19:22:41+00:00",
+        "media_id": "jUH_TIr3F4Y",
+        "error": ""
+      }
+    },
+    "source_episode": "42",
+    "updated_at": "2026-11-21T19:22:41+00:00"
   }
 }
