@@ -222,5 +222,19 @@
     },
     "source_episode": "1215",
     "updated_at": "2026-11-20T19:12:28+00:00"
+  },
+  "9KAi_0AiRWY": {
+    "source_video_id": "9KAi_0AiRWY",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-21T19:27:20+00:00",
+        "media_id": "-XD2381H8wM",
+        "error": ""
+      }
+    },
+    "source_episode": "1216",
+    "updated_at": "2026-11-21T19:27:20+00:00"
   }
 }
