@@ -236,5 +236,19 @@
     },
     "source_episode": "1216",
     "updated_at": "2026-11-21T19:27:20+00:00"
+  },
+  "yLeEXJ87lIo": {
+    "source_video_id": "yLeEXJ87lIo",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-22T18:49:33+00:00",
+        "media_id": "H2MXd-r2-Sk",
+        "error": ""
+      }
+    },
+    "source_episode": "1217",
+    "updated_at": "2026-11-22T18:49:33+00:00"
   }
 }
