@@ -250,5 +250,19 @@
     },
     "source_episode": "1795",
     "updated_at": "2026-11-21T19:20:35+00:00"
+  },
+  "XFjaVIgFy5w": {
+    "source_video_id": "XFjaVIgFy5w",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-22T18:48:40+00:00",
+        "media_id": "OOD-NykBw1c",
+        "error": ""
+      }
+    },
+    "source_episode": "1796",
+    "updated_at": "2026-11-22T18:48:40+00:00"
   }
 }
