@@ -24,8 +24,8 @@ GitHub's internal `schedule:` cron frequently delays runs by 30–90 minutes or 
 
 1. **Option A — Google Apps Script (`scheduler/google_apps_script.gs`, Recommended & 100% Free)**:
    - Open [script.google.com](https://script.google.com), create a project, and paste `scheduler/google_apps_script.gs`.
-   - Set `GITHUB_PAT` to a GitHub Personal Access Token with `repo` and `workflow` permissions.
-   - Run `setupTriggers()` once. It installs a daily **12:00 AM IST (`Asia/Kolkata`)** trigger. Failed show jobs are retried once automatically inside the GitHub Actions run.
+   - Add `GITHUB_PAT` under Apps Script **Project Settings → Script Properties** (a token with repository read and workflow permissions; do not hardcode it).
+   - Run `setupTriggers()` once. It installs a daily **12:00 AM IST (`Asia/Kolkata`)** trigger and a **two-hour watchdog**. The watchdog skips successful shows and reruns only failed jobs or one missing show at a time.
 2. **Option B — cron-job.org (100% Free Web Cron)**:
    - Create a free job at [cron-job.org](https://cron-job.org) set to **00:00 Asia/Kolkata (12:00 AM IST)**.
    - Method: `POST` to `https://api.github.com/repos/<OWNER>/<REPO>/actions/workflows/recap.yml/dispatches`
