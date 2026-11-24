@@ -292,5 +292,19 @@
     },
     "source_episode": "404",
     "updated_at": "2026-11-23T19:27:39+00:00"
+  },
+  "sOXZPNIgSDo": {
+    "source_video_id": "sOXZPNIgSDo",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-24T19:02:05+00:00",
+        "media_id": "1l8jGjqHTtY",
+        "error": ""
+      }
+    },
+    "source_episode": "405",
+    "updated_at": "2026-11-24T19:02:05+00:00"
   }
 }
