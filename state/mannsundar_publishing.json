@@ -278,5 +278,19 @@
     },
     "source_episode": "1797",
     "updated_at": "2026-11-24T01:37:35+00:00"
+  },
+  "ROvT8bAb38o": {
+    "source_video_id": "ROvT8bAb38o",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-24T19:03:53+00:00",
+        "media_id": "JVGqBgOwQRk",
+        "error": ""
+      }
+    },
+    "source_episode": "1798",
+    "updated_at": "2026-11-24T19:03:53+00:00"
   }
 }
