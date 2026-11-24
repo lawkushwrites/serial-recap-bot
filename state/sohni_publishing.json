@@ -250,5 +250,19 @@
     },
     "source_episode": "43",
     "updated_at": "2026-11-23T19:02:22+00:00"
+  },
+  "sFsovbeJ1LY": {
+    "source_video_id": "sFsovbeJ1LY",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-24T18:54:26+00:00",
+        "media_id": "eiy_DCT0IEo",
+        "error": ""
+      }
+    },
+    "source_episode": "44",
+    "updated_at": "2026-11-24T18:54:26+00:00"
   }
 }
