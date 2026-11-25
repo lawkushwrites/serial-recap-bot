@@ -264,5 +264,19 @@
     },
     "source_episode": "44",
     "updated_at": "2026-11-24T18:54:26+00:00"
+  },
+  "8FRpAGlJu28": {
+    "source_video_id": "8FRpAGlJu28",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-25T18:53:53+00:00",
+        "media_id": "6_VP4Pvo-h0",
+        "error": ""
+      }
+    },
+    "source_episode": "45",
+    "updated_at": "2026-11-25T18:53:53+00:00"
   }
 }
