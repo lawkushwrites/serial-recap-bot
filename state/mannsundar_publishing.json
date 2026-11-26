@@ -306,5 +306,19 @@
     },
     "source_episode": "1799",
     "updated_at": "2026-11-26T03:15:16+00:00"
+  },
+  "wpBS5aSzrVQ": {
+    "source_video_id": "wpBS5aSzrVQ",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-26T18:43:02+00:00",
+        "media_id": "xV6Nb8lrj6A",
+        "error": ""
+      }
+    },
+    "source_episode": "1800",
+    "updated_at": "2026-11-26T18:43:02+00:00"
   }
 }
