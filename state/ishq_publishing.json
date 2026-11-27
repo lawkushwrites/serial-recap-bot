@@ -208,5 +208,19 @@
     },
     "source_episode": "258",
     "updated_at": "2026-11-21T19:30:53+00:00"
+  },
+  "6TGpP3T9cJQ": {
+    "source_video_id": "6TGpP3T9cJQ",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-27T01:38:15+00:00",
+        "media_id": "1DvBReLejP0",
+        "error": ""
+      }
+    },
+    "source_episode": "262",
+    "updated_at": "2026-11-27T01:38:15+00:00"
   }
 }
