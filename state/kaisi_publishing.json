@@ -278,5 +278,19 @@
     },
     "source_episode": "124",
     "updated_at": "2026-11-27T01:39:40+00:00"
+  },
+  "MnEYFAOs6VM": {
+    "source_video_id": "MnEYFAOs6VM",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-27T18:44:10+00:00",
+        "media_id": "S6bH5hKxkt8",
+        "error": ""
+      }
+    },
+    "source_episode": "125",
+    "updated_at": "2026-11-27T18:44:10+00:00"
   }
 }
