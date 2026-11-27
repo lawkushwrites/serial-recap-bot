@@ -222,5 +222,19 @@
     },
     "source_episode": "76",
     "updated_at": "2026-11-27T01:36:00+00:00"
+  },
+  "fjHXoASMARM": {
+    "source_video_id": "fjHXoASMARM",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-27T18:44:10+00:00",
+        "media_id": "CZBqVNyxHCQ",
+        "error": ""
+      }
+    },
+    "source_episode": "77",
+    "updated_at": "2026-11-27T18:44:10+00:00"
   }
 }
