@@ -264,5 +264,19 @@
     },
     "source_episode": "123",
     "updated_at": "2026-11-25T18:46:45+00:00"
+  },
+  "e7LanmsPMW8": {
+    "source_video_id": "e7LanmsPMW8",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-27T01:39:40+00:00",
+        "media_id": "kAZXeYin6PM",
+        "error": ""
+      }
+    },
+    "source_episode": "124",
+    "updated_at": "2026-11-27T01:39:40+00:00"
   }
 }
