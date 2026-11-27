@@ -278,5 +278,19 @@
     },
     "source_episode": "45",
     "updated_at": "2026-11-25T18:53:53+00:00"
+  },
+  "hlrc9_iw1jY": {
+    "source_video_id": "hlrc9_iw1jY",
+    "platforms": {
+      "youtube": {
+        "status": "success",
+        "attempts": 0,
+        "updated_at": "2026-11-27T01:38:17+00:00",
+        "media_id": "4QiWkP8RPOY",
+        "error": ""
+      }
+    },
+    "source_episode": "46",
+    "updated_at": "2026-11-27T01:38:17+00:00"
   }
 }
